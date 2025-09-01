@@ -11,7 +11,7 @@
         $content = "<b>📩 Message from site:</b>\n\n" . $content;
     
         $botApiToken = 'token';
-        $channelId ='878821011';
+        $channelId ='id';
         $text = $content;
     
         $query = http_build_query([
