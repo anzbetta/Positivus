@@ -1,0 +1,152 @@
+.footer__body {
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  background-color: #191A23;
+  padding: 55px 60px;
+}
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.footer-menu__media {
+  display: flex;
+  gap: 10px;
+}
+.footer-menu__media-item {
+  display: block;
+  max-width: 30px;
+  width: 100%;
+}
+.footer__logo {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  margin-right: 20px;
+}
+.footer__logo img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #fff;
+  text-decoration: underline;
+  max-width: 550px;
+  width: 100%;
+  margin-right: 20px;
+}
+.footer-contacts {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.footer-contacts__body {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+}
+.footer-contacts__title {
+  display: inline-block;
+  font-size: 20px;
+  background-color: #B9FF66;
+  height: auto;
+  border-radius: 4px;
+  padding: 0 5px;
+  text-wrap: nowrap;
+}
+.footer-contacts__list {
+  margin-top: 27px;
+}
+.footer-contacts__list li {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #fff;
+}
+.footer-contacts__form {
+  max-width: 650px;
+  width: 100%;
+  height: auto;
+  background-color: #292A32;
+  padding: 50px 40px;
+  border-radius: 45px;
+}
+.footer-subscribe-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.footer-subscribe-input {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 22px 35px;
+  border-radius: 14px;
+  color: #fff;
+}
+.footer-subscribe-input::-moz-placeholder {
+  color: #fff;
+}
+.footer-subscribe-input::placeholder {
+  color: #fff;
+}
+.footer-subscribe-bttn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 20px 35px;
+  border-radius: 14px;
+  background-color: #B9FF66;
+  color: #000;
+  font-size: 20px;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+.footer-subscribe-bttn:hover {
+  transform: scale(1.03);
+}
+.footer-subscribe-bttn:active {
+  transform: scale(0.98);
+}
+.footer__rights {
+  padding-top: 50px;
+  border-top: 1px solid #fff;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer__rights p {
+  color: #fff;
+}
+.footer__rights a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-contacts__form .wrong__text {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.footer-subscribe-input.wrong_input {
+  border-color: #ff3d3d;
+}
+
+.footer-subscribe-input.wrong_input:focus {
+  border: 2px solid #ff3d3d;
+  outline: none;
+}

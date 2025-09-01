@@ -1,0 +1,224 @@
+body.lock {
+  overflow: hidden;
+  touch-action: none;
+}
+
+.running-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+.running-line__track {
+  overflow: hidden;
+  display: flex;
+}
+.running-line__marquee-items {
+  display: flex;
+  animation: marquee 15s linear infinite;
+}
+.running-line__marquee-item {
+  padding-right: 100px;
+  filter: grayscale(100%);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+section {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.section-header {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.section__title {
+  background: none;
+}
+.section__title h2 {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 500;
+  background-color: #B9FF66;
+  line-height: normal;
+  height: auto;
+  border-radius: 4px;
+  padding: 0 5px;
+  text-wrap: nowrap;
+}
+.section__subtitle {
+  max-width: 580px;
+}
+
+.bttn {
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  padding: 20px 35px;
+  border-radius: 14px;
+  background-color: #191A23;
+  color: #FFFFFF;
+  font-size: 20px;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+.bttn:hover {
+  transform: scale(1.05);
+}
+.bttn:active {
+  transform: scale(0.98);
+}
+
+.swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.swiper-pagination {
+  bottom: 60px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 10px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 64px;
+  left: 0;
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  background: url("../img/swiper/wh-star.svg") no-repeat center;
+  opacity: 1;
+  background-size: cover;
+  border-radius: 0px;
+}
+
+.swiper-pagination-bullet-active {
+  width: 14px;
+  height: 14px;
+  background: url("../img/swiper/gr-star.svg") no-repeat center;
+  opacity: 1;
+  background-size: cover;
+  border-radius: 0px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  top: auto;
+  bottom: 50px;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: 25%;
+  right: auto;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: 25%;
+  left: auto;
+}
+
+.swiper-button-prev::after {
+  content: "";
+  background: url("../img/swiper/ArrowLeft.svg") no-repeat center;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}
+
+.swiper-button-next::after {
+  content: "";
+  background: url("../img/swiper/ArrowRight.svg") no-repeat center;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  background-color: #F3F3F3;
+  z-index: 1000;
+  border-radius: 45px;
+  padding: 70px 50px 50px;
+  border: 4px solid #292A32;
+  display: none;
+}
+.popup__title {
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+}
+.popup__bttn {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  margin-top: 40px;
+}
+.popup-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #292A32;
+  opacity: 0.3;
+  z-index: 1000;
+  display: none;
+}
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 9px solid #191A23;
+  border-right-color: #B9FF66;
+  animation: l2 1s infinite linear;
+}
+.loader__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  display: none;
+}
+
+@keyframes l2 {
+  to {
+    transform: rotate(1turn);
+  }
+}
